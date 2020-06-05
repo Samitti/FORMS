@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 # Instructions
 
 - Run ` rake db:migrate ` to have the database tables created and setup on your locoal machine.
-- Run ` rails server or ` ` rails s ` on your terminal to start the integrated ruby server.
+- Run ` rails server ` or ` rails s ` on your terminal to start the integrated ruby server.
 - Open your web browser and go to ` localhost:3000 `, to see that the rails sever is up and running.
 - If the index page of the application doesn't open automatically go to ` localhost:3000/users/new ` to  create a new user.
 - You will need to create new users to test-out the database, do so using the form on the webpage.
