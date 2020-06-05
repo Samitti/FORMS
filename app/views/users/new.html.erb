@@ -11,6 +11,8 @@
   <input type="submit" value="Submit">  
 </form>
 -->
+
+<!--
 <%= form_tag('/users', method: :post) do %>
   <%= label_tag(:Username)%><br>
   <%= text_field_tag(:username)%><br>
@@ -21,4 +23,17 @@
 
   <%= submit_tag "Create User" %>
 <% end %>
+-->
 
+
+<%= form_for(@user) do |f| %>
+  <%= f.label :Username %><br>
+  <%= f.text_field :username, placeholder: "Your Name"%><br>
+  <%= f.label :Email %><br>
+  <%= f.email_field :email, placeholder: "example@example.com"%><br>
+  <%= f.label :Password %><br>
+  <%= f.password_field :password%><br><br>
+
+  <%= f.submit %>
+
+<% end %>
